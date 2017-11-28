@@ -7,7 +7,7 @@ import Home from './Home.vue';
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/users', component: Users },
+  { path: '/users/:teamId', component: Users }, //dwukropek mowi o dynamicznym wczytywaniu
   { path: '/', component: Home }
 ];
 const router = new VueRouter({
