@@ -1,9 +1,10 @@
 <template>
-<form class="team-window">
+<form class="team-window md-elevation-20">
   <h2>Users Overview</h2>
   <p>Team ID is {{ $route.params.teamId }}</p>
   <md-button class="md-raised" @click="goHome">Go Home</md-button>
 </form>
+
 </template>
 <script>
 export default {
@@ -26,9 +27,10 @@ export default {
 </script>
 <style media="screen">
   .team-window{
-    background: #d4e137;
+    /*background: #d4e137;*/
+    text-align: center;
   }
   .md-raised{
-    background: #fff;
+    text-align: center;
   }
 </style>

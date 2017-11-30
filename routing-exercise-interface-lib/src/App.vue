@@ -33,31 +33,31 @@ export default {
 </script>
 
 <style lang="scss">
+
 #app {
-    font-family: roboto;
+    // font-family: roboto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #333;
+    // color: #333;
     // background: #d4e137;
     height: 100vh;
 }
 nav {
-    background: #9e9d24;
+    // background: #9e9d24;
 }
 a {
-    text-decoration: none;
-    color: #000;
+    // text-decoration: none;
+    // color: #000;
     font-weight: 900;
     padding: 0.3rem;
-    border-bottom: 1px solid #827717;
+
 }
-h2 {
-    border-bottom: 3px double #827717;
-}
+
 .user-field {
     width: 30vw;
     height: 30vh;
 }
+
 </style>
