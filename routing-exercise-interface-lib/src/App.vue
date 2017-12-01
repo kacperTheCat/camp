@@ -12,6 +12,8 @@
       <md-tab md-label="user 1" to="/Users/1"></md-tab>
       <md-tab md-label="user 2" to="/Users/2"></md-tab>
       <md-tab md-label="user 3" to="/Users/3"></md-tab>
+      <!-- next step, user adding function -->
+      <md-tab md-label="create user" to="/register"></md-tab>
     </md-tabs>
   </nav>
 
