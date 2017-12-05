@@ -14,8 +14,10 @@
 </template>
 
 <script>
+import {
+  mapGetters
+} from 'vuex';
 export default {
-
   methods: {
     unregister(registration) {
       const user = this.$store.state.users.find(user => {
@@ -27,14 +29,11 @@ export default {
     }
   },
 
-  computed: {
-    registrations() {
-      return this.$store.state.registrations;
-    },
-    total() {
-      return this.$store.state.registrations.length;
-    }
-  }
+  computed: mapGetters({
+      registrations: 'registrations',
+      total: 'totalRegistrations'
+    })
+
 }
 </script>
 
