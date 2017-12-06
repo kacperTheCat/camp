@@ -20,19 +20,19 @@ import {
 export default {
   methods: {
     unregister(registration) {
-      const user = this.$store.state.users.find(user => {
-        return user.id == registration.userId;
+      this.$store.commit({
+        type: 'unregister',
+        userId: registration.userId
       });
-      user.registered = false;
-      this.$store.state.registrations.splice(this.$store.state.registrations.indexOf(registration), 1);
-
     }
   },
 
-  computed: mapGetters({
+  computed: {
+    ...mapGetters({ //spred operator
       registrations: 'registrations',
       total: 'totalRegistrations'
     })
+  }
 
 }
 </script>

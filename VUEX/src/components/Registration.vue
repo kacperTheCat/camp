@@ -14,23 +14,12 @@ export default {
   computed: {
     users() {
       return this.$store.getters.unregisterUsers;
-      }
+    }
   },
   methods: {
     registerUser(user) {
+      this.$store.commit('register', user.id)
 
-      const days = ['mon', 'tue', 'wen', 'thu', 'fri', 'sat', 'sun']
-      function giveDay() {
-        return days[date.getDay()-1]
-      }
-
-      const date = new Date();
-      user.registered = true;
-      this.$store.state.registrations.push({
-        userId: user.id,
-        name: user.name,
-        date: (date.getMonth() + 1) + '/' + giveDay()
-      });
     }
   }
 }
